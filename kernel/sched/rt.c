@@ -1309,8 +1309,6 @@ static void yield_task_rt(struct rq *rq)
 #ifdef CONFIG_SMP
 static int find_lowest_rq(struct task_struct *task);
 
-static int
-
 /*
  * Determine if destination CPU explicity disable softirqs,
  * this is different from CPUs which are running softirqs.
