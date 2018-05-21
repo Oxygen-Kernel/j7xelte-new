@@ -415,7 +415,7 @@ KBUILD_CFLAGS   := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		   -Wno-format-security \
 		   -std=gnu89 $(call cc-option,-fno-PIE)
 
-KBUILD_AFLAGS_KERNEL := -march=-march=armv8-a+crc
+KBUILD_AFLAGS_KERNEL := -march=-march=armv8-a+crc+simd
 KBUILD_CFLAGS_KERNEL :=
 KBUILD_AFLAGS   := -D__ASSEMBLY__ $(call cc-option,-fno-PIE)
 KBUILD_AFLAGS_MODULE  := -DMODULE
